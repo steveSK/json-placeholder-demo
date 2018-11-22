@@ -1,3 +1,6 @@
+## Requirements ##
+JDK 10 or higher
+
 ## Project Build #
 `gradle clean build`
 
