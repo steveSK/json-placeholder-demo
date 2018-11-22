@@ -1,5 +1,5 @@
 ## Requirements ##
-JDK 10 or higher
+JDK 10 or higher, Gradle 4.10.x
 
 ## Project Build #
 `gradle clean build`
