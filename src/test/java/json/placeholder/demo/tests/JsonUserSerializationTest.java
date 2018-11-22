@@ -1,10 +1,10 @@
-package json.service.demo.tests;
+package json.placeholder.demo.tests;
 
-import json.service.demo.entity.User;
-import json.service.demo.serialization.JacksonJsonDeserializer;
-import json.service.demo.serialization.JacksonJsonSerializer;
-import json.service.demo.serialization.JsonDeserializer;
-import json.service.demo.serialization.JsonSerializer;
+import json.placeholder.demo.serialization.JacksonJsonDeserializer;
+import json.placeholder.demo.serialization.JacksonJsonSerializer;
+import json.placeholder.demo.serialization.JsonDeserializer;
+import json.placeholder.demo.entity.User;
+import json.placeholder.demo.serialization.JsonSerializer;
 import org.junit.Assert;
 import org.junit.Test;
 

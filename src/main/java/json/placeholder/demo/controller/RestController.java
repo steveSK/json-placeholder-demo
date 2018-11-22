@@ -1,4 +1,4 @@
-package json.service.demo.controller;
+package json.placeholder.demo.controller;
 
 import java.io.IOException;
 import java.net.URL;

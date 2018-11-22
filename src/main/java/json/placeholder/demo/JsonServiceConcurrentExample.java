@@ -1,14 +1,13 @@
-package json.service.demo;
+package json.placeholder.demo;
 
-import json.service.demo.concurrent.ConcurrentUserDispatcher;
-import json.service.demo.concurrent.ConcurrentUserDispatcherImpl;
-import json.service.demo.entity.User;
+import json.placeholder.demo.concurrent.ConcurrentUserDispatcher;
+import json.placeholder.demo.concurrent.ConcurrentUserDispatcherImpl;
+import json.placeholder.demo.entity.User;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
 
 public class JsonServiceConcurrentExample {
 

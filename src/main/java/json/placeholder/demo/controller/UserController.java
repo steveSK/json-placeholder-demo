@@ -1,7 +1,7 @@
-package json.service.demo.controller;
+package json.placeholder.demo.controller;
 
-import json.service.demo.entity.Post;
-import json.service.demo.entity.User;
+import json.placeholder.demo.entity.Post;
+import json.placeholder.demo.entity.User;
 
 import java.io.IOException;
 import java.util.List;

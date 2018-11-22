@@ -1,4 +1,4 @@
-package json.service.demo.cli;
+package json.placeholder.demo.cli;
 
 public interface CLICommand {
 

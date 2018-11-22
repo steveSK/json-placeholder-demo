@@ -1,10 +1,9 @@
-package json.service.demo.concurrent;
+package json.placeholder.demo.concurrent;
 
-import json.service.demo.entity.User;
+import json.placeholder.demo.entity.User;
 
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
 
 public interface ConcurrentUserDispatcher {
 

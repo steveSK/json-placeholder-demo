@@ -1,4 +1,4 @@
-package json.service.demo.controller;
+package json.placeholder.demo.controller;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

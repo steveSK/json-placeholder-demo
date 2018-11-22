@@ -1,4 +1,4 @@
-package json.service.demo.builder;
+package json.placeholder.demo.builder;
 
 import java.net.URL;
 import java.util.Map;

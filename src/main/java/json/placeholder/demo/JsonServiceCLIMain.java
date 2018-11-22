@@ -1,6 +1,6 @@
-package json.service.demo;
+package json.placeholder.demo;
 
-import json.service.demo.cli.UsersCLICommand;
+import json.placeholder.demo.cli.UsersCLICommand;
 
 import java.util.Arrays;
 import java.util.Scanner;

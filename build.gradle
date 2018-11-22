@@ -10,7 +10,7 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.10
 
 apply plugin: 'application'
-mainClassName = "json.service.demo.JsonServiceCLIMain"
+mainClassName = "json.placeholder.demo.JsonServiceCLIMain"
 
 repositories {
     mavenCentral()

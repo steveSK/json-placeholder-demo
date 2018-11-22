@@ -1,12 +1,12 @@
-package json.service.demo.tests;
+package json.placeholder.demo.tests;
 
-import json.service.demo.builder.UrlJsonPlaceholderBuilder;
-import json.service.demo.controller.OkHttpRestController;
-import json.service.demo.controller.UserContollerImpl;
-import json.service.demo.controller.UserController;
-import json.service.demo.entity.Post;
-import json.service.demo.entity.User;
-import json.service.demo.serialization.JacksonJsonDeserializer;
+import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
+import json.placeholder.demo.controller.UserContollerImpl;
+import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.entity.Post;
+import json.placeholder.demo.serialization.JacksonJsonDeserializer;
+import json.placeholder.demo.controller.OkHttpRestController;
+import json.placeholder.demo.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;

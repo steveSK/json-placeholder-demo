@@ -1,12 +1,11 @@
-package json.service.demo.concurrent;
+package json.placeholder.demo.concurrent;
 
-import json.service.demo.builder.UrlJsonPlaceholderBuilder;
-import json.service.demo.cli.CLICommand;
-import json.service.demo.controller.OkHttpRestController;
-import json.service.demo.controller.UserContollerImpl;
-import json.service.demo.controller.UserController;
-import json.service.demo.entity.User;
-import json.service.demo.serialization.JacksonJsonDeserializer;
+import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
+import json.placeholder.demo.controller.OkHttpRestController;
+import json.placeholder.demo.controller.UserContollerImpl;
+import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.entity.User;
+import json.placeholder.demo.serialization.JacksonJsonDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

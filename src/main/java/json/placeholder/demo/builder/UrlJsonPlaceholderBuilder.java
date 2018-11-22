@@ -1,4 +1,4 @@
-package json.service.demo.builder;
+package json.placeholder.demo.builder;
 
 import okhttp3.HttpUrl;
 

@@ -1,15 +1,13 @@
-package json.service.demo.cli;
+package json.placeholder.demo.cli;
 
-import json.service.demo.JsonServiceCLIMain;
-import json.service.demo.builder.UrlJsonPlaceholderBuilder;
-import json.service.demo.cli.CLICommand;
-import json.service.demo.controller.OkHttpRestController;
-import json.service.demo.controller.UserContollerImpl;
-import json.service.demo.controller.UserController;
-import json.service.demo.entity.User;
-import json.service.demo.serialization.JacksonJsonDeserializer;
-import json.service.demo.serialization.JacksonJsonSerializer;
-import json.service.demo.serialization.JsonSerializer;
+import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
+import json.placeholder.demo.controller.UserContollerImpl;
+import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.entity.User;
+import json.placeholder.demo.serialization.JacksonJsonDeserializer;
+import json.placeholder.demo.serialization.JacksonJsonSerializer;
+import json.placeholder.demo.serialization.JsonSerializer;
+import json.placeholder.demo.controller.OkHttpRestController;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

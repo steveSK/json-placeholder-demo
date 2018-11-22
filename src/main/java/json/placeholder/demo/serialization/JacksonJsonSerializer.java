@@ -1,8 +1,8 @@
-package json.service.demo.serialization;
+package json.placeholder.demo.serialization;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import json.service.demo.entity.Post;
-import json.service.demo.entity.User;
+import json.placeholder.demo.entity.Post;
+import json.placeholder.demo.entity.User;
 
 import java.io.IOException;
 import java.util.List;

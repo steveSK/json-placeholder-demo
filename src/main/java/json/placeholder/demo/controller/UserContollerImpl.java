@@ -1,9 +1,9 @@
-package json.service.demo.controller;
+package json.placeholder.demo.controller;
 
-import json.service.demo.builder.UrlBuilder;
-import json.service.demo.entity.Post;
-import json.service.demo.entity.User;
-import json.service.demo.serialization.JsonDeserializer;
+import json.placeholder.demo.builder.UrlBuilder;
+import json.placeholder.demo.entity.Post;
+import json.placeholder.demo.entity.User;
+import json.placeholder.demo.serialization.JsonDeserializer;
 
 import java.io.IOException;
 import java.net.URL;
