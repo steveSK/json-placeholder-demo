@@ -1,3 +1,6 @@
+## Project Build #
+'gradle clean build'
+
 ## CLI interface ##
 
 to run CLI interface use 'gradle run'
