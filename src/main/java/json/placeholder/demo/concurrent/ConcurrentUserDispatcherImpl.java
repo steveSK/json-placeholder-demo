@@ -24,6 +24,7 @@ public class ConcurrentUserDispatcherImpl implements ConcurrentUserDispatcher {
     private final ExecutorService executorService = Executors.newFixedThreadPool(threadPoolSize);
 
 
+    @Override
     public CompletableFuture<Optional<User>> getUserByIdWithPosts(Integer userId) {
         return CompletableFuture.supplyAsync(new ObtainUserTask(userId),executorService);
     }
