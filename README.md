@@ -5,7 +5,7 @@
 
 to run CLI interface use `gradle run`
 
-in CLI interface
+### in CLI interface ###
 
 users {id} -> returns a user with his related post
 
