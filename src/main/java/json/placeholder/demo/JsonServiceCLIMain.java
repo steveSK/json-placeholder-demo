@@ -1,5 +1,6 @@
 package json.placeholder.demo;
 
+import json.placeholder.demo.cli.CLICommand;
 import json.placeholder.demo.cli.UsersCLICommand;
 
 import java.util.Arrays;
@@ -10,7 +11,7 @@ public class JsonServiceCLIMain {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        UsersCLICommand usersCLICommand = new UsersCLICommand();
+        CLICommand usersCLICommand = new UsersCLICommand();
 
         System.out.println("Welcome in JSON PlaceHolder DEMO");
         System.out.println("--------------------------------");
@@ -24,7 +25,6 @@ public class JsonServiceCLIMain {
             String commandLine = scanner.nextLine();
             String[] commandSplit = commandLine.split(" ");
             String command = commandSplit[0];
-
 
             switch (command) {
                 case "users":
