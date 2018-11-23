@@ -20,6 +20,14 @@ public final class Post {
         return title;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     @Override
     public String toString() {
         return "Post{" +
