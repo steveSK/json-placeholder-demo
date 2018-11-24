@@ -32,7 +32,6 @@ public class UsersCLICommand implements CLICommand {
         if (isValid) {
             try {
                 Integer userId = Integer.valueOf(args[0]);
-                JsonSerializer jsonSerializer = new JacksonJsonSerializer();
 
                 Optional<User> userOp = userController.getUserByIdWithPosts(userId);
                 if (userOp.isPresent()) {
