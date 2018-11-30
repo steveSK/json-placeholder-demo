@@ -9,6 +9,7 @@ import java.util.List;
 public interface JsonSerializer {
 
     String fromUser(User user) throws IOException;
+
     String fromPosts(List<Post> posts) throws IOException;
 
 }

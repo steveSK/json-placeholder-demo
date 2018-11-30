@@ -11,7 +11,7 @@ public class UrlJsonPlaceholderBuilder implements UrlBuilder {
     private static final String REST_SERVICE_SCHEME = "https";
 
     @Override
-    public URL buildResourceURLWithPathParam(String resource, String pathParam){
+    public URL buildResourceURLWithPathParam(String resource, String pathParam) {
         return new HttpUrl.Builder()
                 .scheme(REST_SERVICE_SCHEME)
                 .host(REST_SERVICE_HOST)
@@ -22,13 +22,13 @@ public class UrlJsonPlaceholderBuilder implements UrlBuilder {
 
     @Override
     public URL buildResourceURLWithQueryParams(String resource, Map<String, String> queryParams) {
-        HttpUrl.Builder urlBuilder =  new HttpUrl.Builder()
+        HttpUrl.Builder urlBuilder = new HttpUrl.Builder()
                 .scheme(REST_SERVICE_SCHEME)
                 .host(REST_SERVICE_HOST)
                 .addPathSegments(resource);
 
         for (Map.Entry<String, String> queryParam : queryParams.entrySet()) {
-            urlBuilder = urlBuilder.addQueryParameter(queryParam.getKey(),queryParam.getValue());
+            urlBuilder = urlBuilder.addQueryParameter(queryParam.getKey(), queryParam.getValue());
         }
 
         return urlBuilder.build().url();

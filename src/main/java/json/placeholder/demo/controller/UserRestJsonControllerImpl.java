@@ -27,23 +27,18 @@ public class UserRestJsonControllerImpl implements UserRestJsonController {
         this.urlBuilder = urlBuilder;
     }
 
-
-
     @Override
     public User getUserById(Integer userId) throws IOException {
-        URL userUrl = urlBuilder.buildResourceURLWithPathParam(USER_RESOURCE,String.valueOf(userId));
+        URL userUrl = urlBuilder.buildResourceURLWithPathParam(USER_RESOURCE, String.valueOf(userId));
         String userAsString = restController.getResource(userUrl);
         return jsonSerializer.toUser(userAsString);
     }
 
-
-
-
     @Override
     public List<Post> getPostsByUserId(Integer userId) throws IOException {
-        Map<String,String> queryParams =  Map.of(USER_ID_PARAM,String.valueOf(userId));
+        Map<String, String> queryParams = Map.of(USER_ID_PARAM, String.valueOf(userId));
 
-        URL postsUrl = urlBuilder.buildResourceURLWithQueryParams(POST_RESOURCE,queryParams);
+        URL postsUrl = urlBuilder.buildResourceURLWithQueryParams(POST_RESOURCE, queryParams);
         String postAsString = restController.getResource(postsUrl);
 
         return jsonSerializer.toPosts(postAsString);

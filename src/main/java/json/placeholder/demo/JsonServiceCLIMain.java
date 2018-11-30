@@ -21,14 +21,14 @@ public class JsonServiceCLIMain {
         System.out.println("--------------------------------");
 
 
-        while(true) {
+        while (true) {
             String commandLine = scanner.nextLine();
             String[] commandSplit = commandLine.split(" ");
             String command = commandSplit[0];
 
             switch (command) {
                 case "users":
-                    String[] commandArgs = Arrays.copyOfRange(commandSplit,1,commandSplit.length);
+                    String[] commandArgs = Arrays.copyOfRange(commandSplit, 1, commandSplit.length);
                     usersCLICommand.execute(commandArgs);
                     break;
                 case "exit":

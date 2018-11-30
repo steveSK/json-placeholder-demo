@@ -1,9 +1,9 @@
 package json.placeholder.demo.tests;
 
+import json.placeholder.demo.entity.User;
 import json.placeholder.demo.serialization.JacksonJsonDeserializer;
 import json.placeholder.demo.serialization.JacksonJsonSerializer;
 import json.placeholder.demo.serialization.JsonDeserializer;
-import json.placeholder.demo.entity.User;
 import json.placeholder.demo.serialization.JsonSerializer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -35,7 +35,7 @@ public class JsonUserSerializationTest {
     }
 
 
-    private User getUser(){
+    private User getUser() {
         User user = new User();
         user.setName("John Smith");
         user.setUserName("Johny");
@@ -44,7 +44,7 @@ public class JsonUserSerializationTest {
         return user;
     }
 
-    private String getJSONUser(){
+    private String getJSONUser() {
         return "{\n" +
                 "    \"id\": 1,\n" +
                 "    \"name\": \"Leanne Graham\",\n" +

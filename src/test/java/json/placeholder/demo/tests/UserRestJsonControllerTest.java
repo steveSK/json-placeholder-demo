@@ -56,7 +56,7 @@ public class UserRestJsonControllerTest {
         Assert.assertTrue(posts.isEmpty());
     }
 
-    private UserRestJsonController buildUserRestJsonController(){
+    private UserRestJsonController buildUserRestJsonController() {
         return new UserRestJsonControllerImpl(
                 new OkHttpRestController(),
                 new JacksonJsonDeserializer(),

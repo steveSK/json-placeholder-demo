@@ -1,7 +1,7 @@
 package json.placeholder.demo.cli;
 
-import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.entity.User;
 import json.placeholder.demo.serialization.JacksonJsonSerializer;
 import json.placeholder.demo.serialization.JsonSerializer;

@@ -1,15 +1,17 @@
 package json.placeholder.demo.concurrent;
 
 
-import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.Optional;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.function.Supplier;
 
 public class ConcurrentUserDispatcherImpl implements ConcurrentUserDispatcher {
@@ -20,13 +22,13 @@ public class ConcurrentUserDispatcherImpl implements ConcurrentUserDispatcher {
     private final ExecutorService executorService;
 
 
-    public ConcurrentUserDispatcherImpl(int numberOfParallelTasks){
-        executorService =  Executors.newFixedThreadPool(numberOfParallelTasks);
+    public ConcurrentUserDispatcherImpl(int numberOfParallelTasks) {
+        executorService = Executors.newFixedThreadPool(numberOfParallelTasks);
     }
 
     @Override
     public CompletableFuture<Optional<User>> getUserByIdWithPosts(Integer userId) {
-        return CompletableFuture.supplyAsync(new ObtainUserTask(userId),executorService);
+        return CompletableFuture.supplyAsync(new ObtainUserTask(userId), executorService);
     }
 
 

@@ -1,7 +1,7 @@
 package json.placeholder.demo.tests;
 
-import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.controller.UserController;
+import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,7 +18,6 @@ public class UserControllerTest {
     private static final int validId = 2;
     private static final int notValidId = 0;
     private static final int notExistingId = 9999;
-
 
 
     @Test
@@ -54,7 +53,7 @@ public class UserControllerTest {
         Assert.assertTrue(!user.isPresent());
     }
 
-    private UserControllerImpl buildUserController(){
+    private UserControllerImpl buildUserController() {
         return new UserControllerImpl();
     }
 

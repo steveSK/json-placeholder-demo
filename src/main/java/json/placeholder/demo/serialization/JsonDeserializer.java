@@ -9,5 +9,6 @@ import java.util.List;
 public interface JsonDeserializer {
 
     User toUser(String jsonUser) throws IOException;
+
     List<Post> toPosts(String jsonPost) throws IOException;
 }

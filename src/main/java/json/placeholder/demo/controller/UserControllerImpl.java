@@ -9,7 +9,7 @@ import java.util.Optional;
 
 public class UserControllerImpl implements UserController {
 
-    private final UserRestJsonController restJsonController = new UserRestJsonControllerImpl(new OkHttpRestController(),new JacksonJsonDeserializer(),new UrlJsonPlaceholderBuilder());
+    private final UserRestJsonController restJsonController = new UserRestJsonControllerImpl(new OkHttpRestController(), new JacksonJsonDeserializer(), new UrlJsonPlaceholderBuilder());
 
 
     @Override
@@ -17,7 +17,7 @@ public class UserControllerImpl implements UserController {
         validateUserId(userId);
 
         User user = restJsonController.getUserById(userId);
-        if(ifUserReturnedEmpty(user)){
+        if (ifUserReturnedEmpty(user)) {
             return Optional.empty();
         }
         user.setPosts(restJsonController.getPostsByUserId(userId));
@@ -25,17 +25,16 @@ public class UserControllerImpl implements UserController {
     }
 
 
-
-    private void validateUserId(Integer userId){
-        if(userId <= 0){
-            throw  new IllegalArgumentException("User ID have to be higher than 0");
+    private void validateUserId(Integer userId) {
+        if (userId <= 0) {
+            throw new IllegalArgumentException("User ID have to be higher than 0");
         }
-        if(userId == null){
-            throw  new IllegalArgumentException("User ID can not be null");
+        if (userId == null) {
+            throw new IllegalArgumentException("User ID can not be null");
         }
     }
 
-    private boolean ifUserReturnedEmpty(User user){
+    private boolean ifUserReturnedEmpty(User user) {
         return user.getName() == null && user.getUserName() == null && user.getEmail() == null;
     }
 }

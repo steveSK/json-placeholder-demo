@@ -17,27 +17,23 @@ public class JsonServiceConcurrentExample {
     private final static List<CompletableFuture<Optional<User>>> allTasks = new ArrayList<>();
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        for(int i=0;i<1000;i++){
+        for (int i = 0; i < 1000; i++) {
             CompletableFuture<Optional<User>> asyncUser = concurrentUserDispatcher.getUserByIdWithPosts(userId);
             allTasks.add(asyncUser);
         }
 
-        for (CompletableFuture<Optional<User>> task : allTasks)
-        {
+        for (CompletableFuture<Optional<User>> task : allTasks) {
             task.whenComplete((result, exception) -> {
-                if (exception == null)
-                {
+                if (exception == null) {
                     result.ifPresent(x -> System.out.println(x));
-                } else
-                {
+                } else {
                     task.completeExceptionally(exception);
                     System.out.println(exception.getMessage());
                 }
             });
         }
-
 
 
     }

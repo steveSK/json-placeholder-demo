@@ -9,5 +9,6 @@ import java.util.List;
 public interface UserRestJsonController {
 
     User getUserById(Integer userId) throws IOException;
+
     List<Post> getPostsByUserId(Integer userId) throws IOException;
 }
