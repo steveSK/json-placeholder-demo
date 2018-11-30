@@ -1,13 +1,10 @@
 package json.placeholder.demo.cli;
 
-import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
 import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.controller.UserController;
 import json.placeholder.demo.entity.User;
-import json.placeholder.demo.serialization.JacksonJsonDeserializer;
 import json.placeholder.demo.serialization.JacksonJsonSerializer;
 import json.placeholder.demo.serialization.JsonSerializer;
-import json.placeholder.demo.controller.OkHttpRestController;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

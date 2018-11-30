@@ -3,7 +3,6 @@ package json.placeholder.demo.tests;
 
 import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
 import json.placeholder.demo.controller.OkHttpRestController;
-import json.placeholder.demo.controller.UserController;
 import json.placeholder.demo.controller.UserRestJsonController;
 import json.placeholder.demo.controller.UserRestJsonControllerImpl;
 import json.placeholder.demo.entity.Post;
@@ -16,7 +15,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 public class UserRestJsonControllerTest {
 
