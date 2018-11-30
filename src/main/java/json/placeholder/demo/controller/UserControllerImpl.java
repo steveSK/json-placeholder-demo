@@ -9,10 +9,6 @@ import java.util.Optional;
 
 public class UserControllerImpl implements UserController {
 
-    private static final String USER_RESOURCE = "users";
-    private static final String POST_RESOURCE = "posts";
-    private static final String USER_ID_PARAM = "userId";
-
     private final UserRestJsonController restJsonController = new UserRestJsonControllerImpl(new OkHttpRestController(),new JacksonJsonDeserializer(),new UrlJsonPlaceholderBuilder());
 
 
