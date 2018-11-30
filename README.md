@@ -1,3 +1,7 @@
+# JSON PLACEHOLDER DEMO
+Simple application, which extracts user and his posts from https://jsonplaceholder.typicode.com/users 
+
+
 ## Requirements ##
 JDK 10 or higher, Gradle 4.10.x
 
