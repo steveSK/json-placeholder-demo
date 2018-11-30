@@ -13,7 +13,7 @@ public class JsonServiceConcurrentExample {
 
 
     private final static Integer userId = 1;
-    private final static ConcurrentUserDispatcher concurrentUserDispatcher = new ConcurrentUserDispatcherImpl();
+    private final static ConcurrentUserDispatcher concurrentUserDispatcher = new ConcurrentUserDispatcherImpl(8);
     private final static List<CompletableFuture<Optional<User>>> allTasks = new ArrayList<>();
 
 

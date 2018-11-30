@@ -5,9 +5,9 @@ import json.placeholder.demo.entity.User;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
-public interface UserController {
+public interface UserRestJsonController {
 
-    Optional<User> getUserByIdWithPosts(Integer userId) throws IOException;
+    User getUserById(Integer userId) throws IOException;
+    List<Post> getPostsByUserId(Integer userId) throws IOException;
 }

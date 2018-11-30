@@ -1,7 +1,7 @@
 package json.placeholder.demo.cli;
 
 import json.placeholder.demo.builder.UrlJsonPlaceholderBuilder;
-import json.placeholder.demo.controller.UserContollerImpl;
+import json.placeholder.demo.controller.UserControllerImpl;
 import json.placeholder.demo.controller.UserController;
 import json.placeholder.demo.entity.User;
 import json.placeholder.demo.serialization.JacksonJsonDeserializer;
@@ -20,10 +20,7 @@ public class UsersCLICommand implements CLICommand {
     private static Logger logger = LoggerFactory.getLogger(CLICommand.class);
 
     private final JsonSerializer jsonSerializer = new JacksonJsonSerializer();
-    private final UserController userController = new UserContollerImpl(
-            new OkHttpRestController(),
-            new JacksonJsonDeserializer(),
-            new UrlJsonPlaceholderBuilder());
+    private final UserController userController = new UserControllerImpl();
 
     @Override
     public void execute(String[] args) {
